@@ -17,5 +17,6 @@ import pandas as pd
 import streamlit as st
 st.header('file upload app2')
 file=st.file_uploader('upload dataset',type=['csv'])
-df=pd.read_csv(file)
-st.write(df)
+if file is not None:
+    df=pd.read_csv(file)
+    st.write(df)
