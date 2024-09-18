@@ -9,7 +9,7 @@ if file is not None:
      names_column=st.multiselect('choose columns',df.columns.to_list)
      st.write(df[:num_row][names_column])
      if names_column:
-           st.write(df[names_column][:num_row])
+           st.write(df[:num_row][names_column])
      else:
           st.write(df[:num_row])
           
