@@ -12,6 +12,7 @@ if file is not None:
            st.write(df[names_column][:num_row])
      else:
           st.write(df[:num_row])
+          
        
       
    
